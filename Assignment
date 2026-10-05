@@ -1,0 +1,20 @@
+##MWESIGWA JOEL S26B13/079
+#Write a function that takes a list of numbers and returns how many are above 50
+#combined functions and lists
+
+def count_above_50(numbers):
+    count = 0
+    for number in numbers:
+        if number > 50:
+            count = count + 1
+    return count
+
+numbers = []
+n = int(input("How many numbers do you want to enter? "))
+
+for i in range(n):
+    value = int(input("Enter number: "))
+    numbers.append(value)
+
+result = count_above_50(numbers)
+print(f"Number of values above 50: {result}")
